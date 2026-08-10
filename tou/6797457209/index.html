@@ -1,43 +1,272 @@
-<!DOCTYPE html>
-<html style='height:100%;margin:0;padding:0;'>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Terms of Use</title>
-    <style type="text/css"></style>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms of Use for NestShield Cam: Smart Link.">
+  <title>Terms of Use — NestShield Cam: Smart Link</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #162334;
+      --muted: #617083;
+      --line: #dce4ec;
+      --paper: #ffffff;
+      --wash: #eef5f9;
+      --accent: #146c79;
+      --accent-soft: #e2f2f2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 88% 4%, rgba(39, 151, 159, .14), transparent 24rem),
+        linear-gradient(180deg, var(--wash) 0, #f8fafc 28rem, #f8fafc 100%);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); }
+    a:hover { text-decoration-thickness: 2px; }
+
+    .shell {
+      width: min(100% - 32px, 820px);
+      margin: 0 auto;
+      padding: 28px 0 64px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 42px;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+    }
+
+    .brand {
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .topbar nav { display: flex; gap: 18px; }
+
+    .topbar nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .topbar nav a[aria-current="page"] {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    header { margin-bottom: 30px; }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 680px;
+      margin: 0;
+      font-size: clamp(42px, 8vw, 68px);
+      font-weight: 500;
+      letter-spacing: -.045em;
+      line-height: 1.02;
+    }
+
+    .updated {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+    }
+
+    .summary {
+      margin: 32px 0 42px;
+      padding: 24px 26px;
+      border: 1px solid #b9dddd;
+      border-radius: 16px;
+      background: var(--accent-soft);
+    }
+
+    .summary strong {
+      display: block;
+      margin-bottom: 6px;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+    }
+
+    .summary p { margin: 0; }
+
+    main {
+      padding: 38px clamp(22px, 6vw, 64px) 46px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--paper);
+      box-shadow: 0 20px 55px rgba(22, 35, 52, .07);
+    }
+
+    section + section {
+      margin-top: 36px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    li + li { margin-top: 10px; }
+
+    footer {
+      padding: 28px 4px 0;
+      color: var(--muted);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 560px) {
+      body { font-size: 16px; }
+      .shell { width: min(100% - 22px, 820px); padding-top: 20px; }
+      .topbar { align-items: flex-start; flex-direction: column; margin-bottom: 34px; }
+      main { padding: 30px 20px 38px; border-radius: 16px; }
+      .summary { padding: 20px; }
+    }
+  </style>
 </head>
-
 <body>
-    <p style='font-weight:bold;font-size:200%;font-family:"San Francisco text","Serif";'>Terms of Use</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Thank you for using our apps. We’re continuing improving and producing more innovative products to bring best values to yours. These terms of service are applied to all products ofNestShield Cam: Smart Link. Please read carefully before using our
-        apps.
-    </p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>By usingNestShield Cam: Smart Link products, you agree to be bound by these Terms. If you don’t agree to these Terms, do not use our apps. If you are using our products on behalf of an organization (such as your employer), you are agreeing to these
-        Terms for that organization, and are indicating that you have the authority to bind that organization to these Terms. In that case, “you” and “your” will refer to that organization.</p>
-    <p style='font-weight:bold;font-size:120%;font-family:"San Francisco text","Serif";'>General Prohibitions</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>You agree not to do—or attempt to do—any of the following:</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Probe, scan, or test the vulnerability of anyNestShield Cam: Smart Link system or network or breach any security or authentication measures;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Access, tamper with, or use non-public areas ofNestShield Cam: Smart Link,NestShield Cam: Smart Link’s computer systems, or the technical delivery systems ofNestShield Cam: Smart Link’s providers;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Decipher, decompile, disassemble or reverse engineer any of the software used to provideNestShield Cam: Smart Link;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Interfere with, or attempt to interfere with, the access of any user, host or network, including sending a virus, overloading, flooding, spamming, or mail-bombingNestShield Cam: Smart Link;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Access or searchNestShield Cam: Smart Link or download any intellectual property fromNestShield Cam: Smart Link through the use of any engine, software, tool, agent, device or mechanism (including spiders, robots, crawlers, data mining tools
-        or the like) other than our publicly supported interfaces;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Plant malware or useNestShield Cam: Smart Link to distribute malware;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Send any unsolicited communications, promotions, advertisements or spam;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Send altered, deceptive or false source-identifying information, including “spoofing” or “phishing”;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Post or transmit anything that is fraudulent or misleading, or that infringes on others’ rights;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Impersonate or misrepresent your affiliation with any person or entity;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Violate the privacy of others;</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Violate any applicable law or regulation; or</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Encourage or enable any other individual to do any of the above.</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>Although we’re not obligated to monitor access to or use ofNestShield Cam: Smart Link or your content or to review or edit any of your content or the intellectual property of otherNestShield Cam: Smart Link users, we have the right to do so
-        for the purpose of operatingNestShield Cam: Smart Link, to ensure compliance with these Terms, or to comply with applicable law or other legal requirements. We reserve the right, but are not obligated, to remove or disable access to any of
-        your content, at any time and without notice, including, but not limited to, if we, at our sole discretion, consider any of your content to be objectionable or in violation of these Terms. We have the right to investigate violations of these Terms
-        or conduct that affectsNestShield Cam: Smart Link. We may also consult and cooperate with law enforcement authorities to prosecute users who violate the law.</p>
-    <p style='font-weight:bold;font-size:120%;font-family:"San Francisco text","Serif";'>Copyright Policy</p>
-    <p style='font-size:100%;font-family:"San Francisco text","Serif";'>We respect copyright law and expect you to do the same. It’s our policy to terminate those accounts that repeatedly infringe or are believed to be repeatedly infringing the rights of copyright holders.</p>
-    <span style='font-weight:bold;font-size:120%;font-family:"San Francisco text","Serif";'>Contact Us:<a style="word-break: break-all;"  href="https://zhilianxingtu.com/hp/6797457209/">https://zhilianxingtu.com/hp/6797457209/</a></span>
-</body>
+  <div class="shell">
+    <div class="topbar">
+      <a class="brand" href="../../hp/6797457209/">NestShield Cam: Smart Link</a>
+      <nav aria-label="Legal pages">
+        <a href="../../pp/6797457209/">Privacy</a>
+        <a href="./" aria-current="page">Terms</a>
+      </nav>
+    </div>
 
+    <header>
+      <p class="eyebrow">Rules for using the App</p>
+      <h1>Terms of Use</h1>
+      <p class="updated">Effective: August 10, 2026</p>
+    </header>
+
+    <div class="summary">
+      <strong>Important clarification</strong>
+      <p>NestShield Cam: Smart Link does not create App user accounts. Camera credentials you enter belong to your camera and are stored locally in the iOS Keychain; they are not credentials for an App account.</p>
+    </div>
+
+    <main>
+      <section aria-labelledby="acceptance">
+        <h2 id="acceptance">1. Acceptance of these Terms</h2>
+        <p>These Terms of Use (“Terms”) govern your use of NestShield Cam: Smart Link (the “App”). By downloading or using the App, you agree to these Terms. If you do not agree, do not use the App.</p>
+      </section>
+
+      <section aria-labelledby="purpose">
+        <h2 id="purpose">2. What the App does</h2>
+        <p>The App provides tools for discovering devices on a local network, connecting to compatible cameras, viewing camera streams, creating camera-placement plans, measuring network performance, and saving screenshots or recordings locally. Features may depend on your camera, network, device, iOS version, and granted permissions.</p>
+      </section>
+
+      <section aria-labelledby="no-account">
+        <h2 id="no-account">3. No App account</h2>
+        <p>The App does not offer App account registration, App sign-in, social-media sign-in, user profiles, public posting, or messaging. There is therefore no App account to close or disable. You can stop using the App at any time and delete it from your device.</p>
+      </section>
+
+      <section aria-labelledby="license">
+        <h2 id="license">4. Limited license</h2>
+        <p>Subject to these Terms, we grant you a personal, limited, non-exclusive, non-transferable, and revocable license to use the App on Apple-branded devices that you own or control, as permitted by the App Store usage rules. The App is licensed, not sold.</p>
+      </section>
+
+      <section aria-labelledby="authorized-use">
+        <h2 id="authorized-use">5. Authorized cameras and networks only</h2>
+        <p>You may scan, connect to, view, configure, or record only networks and cameras that you own or are expressly authorized to access. You are responsible for obtaining any consent required from property owners, occupants, employees, visitors, or other people who may be recorded.</p>
+        <p>You must comply with applicable privacy, surveillance, audio-recording, data protection, and property laws. The App must not be used for covert, unlawful, harassing, discriminatory, or rights-infringing monitoring.</p>
+      </section>
+
+      <section aria-labelledby="credentials">
+        <h2 id="credentials">6. Camera credentials and security</h2>
+        <p>Any user name or password entered in the App is used to connect directly to a camera or other device you selected. Camera credentials are stored locally in the iOS Keychain and are not App user credentials. You are responsible for using strong, unique camera passwords and for securing your iPhone or iPad, local network, router, and connected cameras.</p>
+      </section>
+
+      <section aria-labelledby="media">
+        <h2 id="media">7. Streams, recordings, and plans</h2>
+        <p>You retain responsibility for camera streams, screenshots, recordings, imported floor plans, room labels, and placement plans that you access or create. You represent that you have the necessary rights and permissions to use this material. Protect exported media appropriately, especially if it contains identifiable people, private spaces, or sensitive information.</p>
+      </section>
+
+      <section aria-labelledby="prohibited">
+        <h2 id="prohibited">8. Prohibited conduct</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>access or attempt to access a camera, device, stream, credential, or network without authorization;</li>
+          <li>use the App to violate another person’s privacy, intellectual-property rights, or other legal rights;</li>
+          <li>circumvent security controls, distribute malware, disrupt networks or devices, or use scan results to facilitate an attack;</li>
+          <li>reverse engineer, modify, redistribute, rent, lease, sublicense, or commercially exploit the App except where applicable law expressly permits it; or</li>
+          <li>use the App in violation of applicable law or App Store rules.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="third-party">
+        <h2 id="third-party">9. Third-party cameras and services</h2>
+        <p>Cameras, routers, operating-system services, and other products used with the App are provided by third parties. We do not control them and are not responsible for their availability, security, privacy practices, performance, or terms. Compatibility information is not a guarantee that every feature will work with every device.</p>
+      </section>
+
+      <section aria-labelledby="availability">
+        <h2 id="availability">10. Updates and availability</h2>
+        <p>We may add, change, or remove App features and may release updates for security, compatibility, or performance. We do not guarantee that the App or any feature will always be available, uninterrupted, or compatible with future versions of iOS or third-party hardware.</p>
+      </section>
+
+      <section aria-labelledby="ip">
+        <h2 id="ip">11. Intellectual property</h2>
+        <p>The App, including its software, design, text, graphics, and branding, is owned by us or our licensors and is protected by applicable intellectual-property laws. These Terms do not transfer ownership of the App or our marks to you.</p>
+      </section>
+
+      <section aria-labelledby="disclaimer">
+        <h2 id="disclaimer">12. Disclaimer</h2>
+        <p>To the fullest extent permitted by law, the App is provided “as is” and “as available,” without warranties of any kind, whether express, implied, or statutory. The App is a convenience tool and is not a substitute for a professionally designed security, life-safety, emergency-response, or surveillance system. Do not rely on the App to prevent loss, injury, intrusion, or other harm.</p>
+      </section>
+
+      <section aria-labelledby="liability">
+        <h2 id="liability">13. Limitation of liability</h2>
+        <p>To the fullest extent permitted by law, we will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, recordings, access, profits, or goodwill arising from your use of or inability to use the App. Nothing in these Terms excludes rights or liability that cannot lawfully be excluded.</p>
+      </section>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">14. Changes to these Terms</h2>
+        <p>We may update these Terms to reflect changes to the App or legal requirements. Revised Terms will be posted on this page with a new effective date. Your continued use of the App after revised Terms take effect means you accept them.</p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">15. Contact us</h2>
+        <p>Questions about these Terms can be sent to <a href="mailto:FengYun20260606@163.com">FengYun20260606@163.com</a>.</p>
+      </section>
+    </main>
+
+    <footer>© 2026 NestShield Cam: Smart Link</footer>
+  </div>
+</body>
 </html>
