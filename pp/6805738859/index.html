@@ -108,9 +108,13 @@
         <h3>Data that may be sent</h3>
         <ul>
           <li>photos you select, which may contain faces or other personal information;</li>
-          <li>generation prompts; and</li>
-          <li>the style, target age, pet name, and generation parameters you select.</li>
+          <li>optional edit masks used for selected image-editing tasks;</li>
+          <li>generation prompts;</li>
+          <li>the style, target age, pet name, and generation parameters you select;</li>
+          <li>a stable, randomly generated installation identifier sent as <code>X-USER-ID</code>; and</li>
+          <li>necessary task information such as the selected capability, provider/model identifier, scene, request state, and idempotency information.</li>
         </ul>
+        <p>The installation identifier is pseudonymous and is not derived from your name, photo, or device name, but it can associate multiple AI requests with the same App installation.</p>
 
         <h3>Purpose and provider practices</h3>
         <p>The data is used only to generate the image or video you requested and return the result. AI Photo Studio does not use submitted content for advertising or user profiling. Third-party processing, retention, and model-training practices are governed by each provider's applicable policies and service terms. No promise of Zero Data Retention or exclusion from model training is made in this policy.</p>
@@ -118,7 +122,7 @@
 
         <h3>Temporary transfer, result storage, and withdrawal</h3>
         <p>The compressed photo is transmitted with the current task. Generated results are provided through DingYue content storage. DingYue AI, its content-storage service, model providers, and infrastructure providers may process or retain submitted content, generated results, and necessary technical records under their applicable terms for service delivery, security, abuse prevention, troubleshooting, or legal compliance.</p>
-        <p>You can withdraw consent at any time under <strong>Settings &gt; AI Data Use Notice</strong>. After withdrawal, the App will not start any new cloud AI request unless you agree again. Withdrawing consent does not by itself delete data from completed tasks; contact <a href="mailto:FengYun20260606@163.com">FengYun20260606@163.com</a> to ask questions or request deletion.</p>
+        <p>You can withdraw consent at any time under <strong>Settings &gt; AI Data Use</strong>. After withdrawal, the App will not start any new cloud AI request unless you agree again. Withdrawing consent does not by itself delete data from completed tasks; contact <a href="mailto:FengYun20260606@163.com">FengYun20260606@163.com</a> to ask questions or request deletion.</p>
       </section>
 
       <section id="retention" class="section"><span class="index">06 / RETENTION &amp; DELETION</span><h2>How long data is kept</h2>
@@ -126,7 +130,7 @@
           <tr><td>Local photos, edits, filters, and results</td><td>Remain on your device or in your photo library until you delete them, clear the App's data, or remove the App and its data.</td></tr>
           <tr><td>Unsaved camera frames and temporary local data</td><td>Used for the active camera or editing session and released when the session ends or the App closes.</td></tr>
           <tr><td>DingYue AI Gateway temporary image</td><td>Deletion is requested when identification finishes or is cancelled. If deletion is not confirmed, the App stores a pending deletion task and retries after a later launch.</td></tr>
-          <tr><td>Installation identifier and request records</td><td>Used to operate, secure, troubleshoot, and prevent abuse of Identify. You may request deletion by contacting support, subject to necessary security and legal records.</td></tr>
+          <tr><td>Installation identifier and AI request records</td><td>Used to associate tasks with the same App installation, operate the service, isolate usage, secure requests, troubleshoot, and prevent abuse for Identify and AI Photo Studio. You may request deletion by contacting support, subject to necessary security and legal records.</td></tr>
           <tr><td>OpenRouter, Google Gemini, and infrastructure records</td><td>May be processed or retained under each provider's applicable terms for service delivery, security, abuse prevention, troubleshooting, or legal compliance. No ZDR commitment is made in this policy.</td></tr>
           <tr><td>AI Photo Studio input and generation records</td><td>The compressed photo is transmitted with the current task. DingYue AI and the selected model provider may process or retain inputs, prompts, parameters, outputs, and necessary technical records under their applicable terms. No fixed provider-side retention or training exclusion is promised.</td></tr>
           <tr><td>AI Photo Studio generated results</td><td>Provided through DingYue content storage so the result can be returned or accessed. To request deletion of a generated result or related task data, contact support with information sufficient to locate the task.</td></tr>
@@ -137,7 +141,8 @@
       <section id="control" class="section"><span class="index">07 / CONSENT &amp; CONTROL</span><h2>Your choices</h2>
         <h3>Before Identify data is sent</h3><p>The App displays an AI Data Use authorization. A selected image is sent only after you actively choose <strong>“Agree and Enable.”</strong></p>
         <h3>Refusal and withdrawal</h3><p>Refusing the authorization prevents the Identify request. You can disable the feature at any time under <strong>Settings &gt; Privacy &gt; Allow Cloud Identification</strong>. Once disabled, Filter Camera will not transmit any new identification data.</p>
-        <h3>AI Photo Studio consent</h3><p>The <strong>“Allow Third-Party AI Services?”</strong> dialog appears only when you actively use a cloud AI feature and have not agreed to the current notice version. Selecting <strong>“Cancel”</strong> prevents that cloud request. You can withdraw consent under <strong>Settings &gt; AI Data Use Notice</strong>; withdrawal prevents new cloud AI tasks.</p>
+        <h3>AI Photo Studio consent</h3><p>The <strong>“Allow Third-Party AI Services?”</strong> dialog appears only when you actively use a cloud AI feature and have not agreed to the current notice version. Selecting <strong>“Cancel”</strong> prevents that cloud request. You can withdraw consent under <strong>Settings &gt; AI Data Use</strong>; withdrawal prevents new cloud AI tasks.</p>
+        <p>The accepted disclosure version and acceptance time are stored locally on your device so the App can determine whether the current notice has already been accepted.</p>
         <div class="note"><strong>Withdrawal does not delete historical data.</strong> To request deletion of information related to an Identify request, email <a href="mailto:FengYun20260606@163.com">FengYun20260606@163.com</a> with the subject “Filter Camera Privacy Request.”</div>
         <p>We will complete a verified access or deletion request within <strong>30 days</strong>, unless applicable law requires a different period.</p>
       </section>
